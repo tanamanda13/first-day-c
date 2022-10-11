@@ -11,7 +11,7 @@ pipeline {
         }
         stage('archive') {
             steps {
-                archiveArtifacts "${WORKSPACE}"
+                archiveArtifacts "HelloWorld.c"
                 // script {
                 //     if (fileExists('HelloWorld')) {
                 //         archiveArtifacts "${WORKSPACE}"
